@@ -19,7 +19,7 @@ We used a simple, off-the-shelf Random Forrest Regression Model and fed it with 
 
 #### The Data
 
-Our model is based on two differenti, publically available data sets:
+Our model is based on two different, publically available data sets:
 
 1) A 2014 NYC Green Taxi Data Set ([link]()), containing information (pickup/dropoff location, fares, etc.) for > 1 mio green taxi rides from NYC in 2014.
 2) A shapefile provided by NYC City Planning ([link](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-nynta.page)), which helps to map pickup/dropoff coordinates to higher-order neighborhood districts, called NTAs.
@@ -29,7 +29,8 @@ Our model is based on two differenti, publically available data sets:
 ### Cloning the repository
 
 ```console
-:~ $ git clone https://github.com/bummy93/dataopen2019.git & cd dataopen2019
+:~ $ git clone https://github.com/bummy93/dataopen2019.git
+:~ $ cd dataopen2019 
 ```
 
 ### Installing required python packages
@@ -41,10 +42,8 @@ The code for this project is written in Python 3.7.4
 ```
 
 ### Downloading the data sets
-
+Please be aware that it might take a little while for the taxi data set (~3.5 GB) to download. 
 ```console
-:~/dataopen2019 $ wget -o data/green_trips.csv "https://data.cityofnewyork.us/api/views/2np7-5jsg/rows.csv?accessType=DOWNLOAD"
-:~/dataopen2019 $ wget -o data/nta.json "http://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/nynta/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=geojson"
-
-
+:~/dataopen2019 $ wget -O data/green_trips.csv "https://data.cityofnewyork.us/api/views/2np7-5jsg/rows.csv?accessType=DOWNLOAD"
+:~/dataopen2019 $ wget -O data/nta.json "http://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/nynta/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=geojson"
 ```
