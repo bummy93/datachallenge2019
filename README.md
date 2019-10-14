@@ -1,7 +1,6 @@
 ---
-title: Citadel Data Open 2019 
-author: Simon Bumm, Tristan Ballard, Jen Weng, Nutchapol Dendumrongsup
 date: 2019/10/13 
+authors: Simon Bumm, Tristan Ballard, Jen Weng, Nutchapol Dendumrongsup
 ---
 
 # The Data Open - Stanford 2019
